@@ -29,6 +29,11 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
+
+    --custom-4: #1a5319;
+    --custom-3: #508d4e;
+    --custom-2: #80af81;
+    --custom-1: #d6efd8;
   }
 
   .dark {
@@ -56,6 +61,11 @@
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
+
+    --custom-4: #1a5319;
+    --custom-3: #508d4e;
+    --custom-2: #80af81;
+    --custom-1: #d6efd8;
   }
 }
 
@@ -66,4 +76,33 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.flex2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.zen {
+  --s: 139px; /* control the size*/
+
+  --c1: #f7d2a1;
+  --c2: #1a5319;
+
+  --_g: var(--c1) 0% 5%, var(--c2) 6% 15%, var(--c1) 16% 25%, var(--c2) 26% 35%,
+    var(--c1) 36% 45%, var(--c2) 46% 55%, var(--c1) 56% 65%, var(--c2) 66% 75%,
+    var(--c1) 76% 85%, var(--c2) 86% 95%, #0000 96%;
+  background: radial-gradient(50% 50% at 100% 0, var(--_g)),
+    radial-gradient(50% 50% at 0 100%, var(--_g)),
+    radial-gradient(50% 50%, var(--_g)),
+    radial-gradient(50% 50%, var(--_g)) calc(var(--s) / 2) calc(var(--s) / 2)
+      var(--c1);
+  background-size: var(--s) var(--s);
 }
