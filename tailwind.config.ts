@@ -54,10 +54,10 @@ const config = {
         },
 
         custom: {
-          100: "var(--custom-1)",
-          200: "var(--custom-2)",
-          300: "var(--custom-3)",
-          400: "var(--custom-4)",
+          100: "hsl(var(--custom-1))",
+          200: "hsl(var(--custom-2))",
+          300: "hsl(var(--custom-3))",
+          400: "hsl(var(--custom-4))",
         },
       },
       borderRadius: {

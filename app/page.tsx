@@ -1,12 +1,6 @@
-import { Door } from "@/components/door";
 import { Footer } from "@/components/nav/footer";
 import { Button } from "@/components/ui/button";
-import {
-  Bubblegum_Sans,
-  Noto_Serif_Khitan_Small_Script,
-  Noto_Serif_KR,
-} from "next/font/google";
-import Image from "next/image";
+import { Noto_Serif_KR } from "next/font/google";
 import Link from "next/link";
 
 // const inter = Bubblegum_Sans({ subsets: ["latin"], weight: ["400"] });
@@ -18,7 +12,10 @@ const inter = Noto_Serif_KR({
 export default function Home() {
   return (
     <>
-      <main className="h-full flex2 flex-col pb-20 bg-custom-300 text-custom-100">
+      <video autoPlay muted loop id="myVideo" className="fixed -z-20">
+        <source src="/videos/pond.mp4" type="video/mp4" />
+      </video>
+      <main className="h-full flex2 flex-col pb-20 bg-custom-300/50 text-custom-100">
         <h1 className="text-9xl font-black">秶</h1>
         <h1 className={`${inter.className} mt-10 text-7xl font-medium`}>
           피자 정원
