@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const SignInPage = () => {
   return (
-    <main className="h-full flex2 bg-blue-300">
+    <main className="h-full flex2 bg-custom-200">
       <div className="h-4/5 w-4/5 flex shadow-2xl rounded-3xl">
         <section className="p-10 pb-20 pr-20 h-full w-1/2 flex2 rounded-l-3xl bg-background">
           <div className="w-full max-w-96">

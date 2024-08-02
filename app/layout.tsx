@@ -6,13 +6,8 @@ const inter = Noto_Sans_KR({
   subsets: ["latin"],
 });
 
-export const notoSerif = Noto_Serif_KR({
-  subsets: ["latin"],
-  weight: ["200", "300", "400", "500", "600", "700", "900"],
-});
-
 export const metadata: Metadata = {
-  title: "피자 가든",
+  title: "피자 정원",
   description: "피자에 대한 모든 것",
 };
 

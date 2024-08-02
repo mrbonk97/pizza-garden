@@ -1,7 +1,12 @@
 import { Footer } from "@/components/nav/footer";
 import { Button } from "@/components/ui/button";
+import { Noto_Serif_KR } from "next/font/google";
 import Link from "next/link";
-import { notoSerif } from "./layout";
+
+const notoSerif = Noto_Serif_KR({
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600", "700", "900"],
+});
 
 export default function Home() {
   return (
@@ -16,7 +21,7 @@ export default function Home() {
         <source src="/videos/pond.mp4" type="video/mp4" />
       </video>
       <main
-        className={`${notoSerif.className} h-full flex2 flex-col pb-20 bg-custom-300/50 text-custom-100`}
+        className={`${notoSerif.className} min-h-96 h-full flex2 flex-col pb-20 bg-custom-300/50 text-custom-100`}
       >
         <h1 className="text-9xl font-black">秶</h1>
         <h1 className="mt-10 text-7xl font-medium">피자 정원</h1>
