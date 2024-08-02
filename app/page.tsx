@@ -12,7 +12,13 @@ const inter = Noto_Serif_KR({
 export default function Home() {
   return (
     <>
-      <video autoPlay muted loop id="myVideo" className="fixed -z-20">
+      <video
+        autoPlay
+        muted
+        loop
+        id="myVideo"
+        className="fixed -z-10 object-cover h-full w-full"
+      >
         <source src="/videos/pond.mp4" type="video/mp4" />
       </video>
       <main className="h-full flex2 flex-col pb-20 bg-custom-300/50 text-custom-100">
